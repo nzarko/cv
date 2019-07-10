@@ -7,6 +7,10 @@ PROJECT(sampleCode)
 
 #SET(OpenCV_DIR Enter-the-path-of-OpenCV-installation-on-your-system)
 
+if(UNIX)
+    SET(OpenCV_DIR /home/nick/OpenCV/installation/OpenCV-4.1.0/lib/cmake/opencv4)
+ENDIF(UNIX)
+
 ################### OpenCV_DIR Examples  #####################
 
 ### MACOS : /usr/local/Cellar/opencv/4.1.0/share/OpenCV/
